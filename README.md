@@ -11,18 +11,6 @@
 2. cd metro-vue
 3. yarn serve or npm run serve
 
-metro-vue
-This application allows users to vue the arrival times of their' preferred station and lines. The users will be able to select a station, and an available time to view the arrival times and information about the station. 
+metro-vue is an application that allows users to vue the arrival times of their preferred station and lines. The users will be able to select a station, and an available time to view the arrival times and information about the station. 
 
-```
-### Compiles and hot-reloads for development
-```
-```
-yarn serve
-### Compiles and minifies for production
-yarn build
-```
-```
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-```
+
