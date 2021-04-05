@@ -1,3 +1,6 @@
+<!-- NavBar is a component that creates the Navigation bar.
+It contains the Name of the Application and variety of information
+categorized and organized in the dropdown menus-->
 <template>
   <mdb-navbar color="indigo" dark>
     <mdb-navbar-brand href="#">
@@ -6,6 +9,10 @@
     <mdb-navbar-toggler>
       <mdb-navbar-nav>
         <mdb-dropdown tag="li" class="nav-item">
+<!-- This is a dropdown menu for the Service category where 
+the items below are the services that Washington Metro Vue
+has to offer. In the future, I will make these links, so
+they will redirect to an appropriate web page. -->
           <mdb-dropdown-toggle tag="a" navLink color="indigo" slot="toggle"  waves-fixed>Service</mdb-dropdown-toggle>
           <mdb-dropdown-menu>
             <mdb-dropdown-item>Rail</mdb-dropdown-item>
@@ -23,6 +30,8 @@
           </mdb-dropdown-menu>
         </mdb-dropdown>
         <mdb-dropdown tag="li" class="nav-item">
+<!-- Dropdown menu for Schedules & Maps. It contains all items 
+related to Schedules and Maps for the Rail and Bus-->
           <mdb-dropdown-toggle tag="a" navLink color="indigo" slot="toggle"  waves-fixed>Schedules & Maps</mdb-dropdown-toggle>
           <mdb-dropdown-menu>
             <mdb-dropdown-item>Trip Planner</mdb-dropdown-item>
@@ -33,6 +42,8 @@
           </mdb-dropdown-menu>
         </mdb-dropdown>
         <mdb-dropdown tag="li" class="nav-item">
+<!-- Dropdown menu for Rider Guide. It contains all items 
+related to guides for riders.-->
           <mdb-dropdown-toggle tag="a" navLink color="indigo" slot="toggle"  waves-fixed>Rider Guide</mdb-dropdown-toggle>
           <mdb-dropdown-menu>
             <mdb-dropdown-item>Stations</mdb-dropdown-item>
@@ -46,6 +57,8 @@
           </mdb-dropdown-menu>
         </mdb-dropdown>
         <mdb-dropdown tag="li" class="nav-item">
+<!-- Dropdown menu for Fares. It contains all items 
+related to the pricing for using the services. -->
           <mdb-dropdown-toggle tag="a" navLink color="indigo" slot="toggle"  waves-fixed>Fares</mdb-dropdown-toggle>
           <mdb-dropdown-menu>
             <mdb-dropdown-item>Cost to Ride</mdb-dropdown-item>
@@ -64,6 +77,8 @@
   </mdb-navbar>
 </template>
 
+<!-- All necessary imports and exports for this component is here.
+A lot of the styling is from mdbvue -->
 <script>
   import { mdbFormInline, mdbInput, mdbBtn,mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbDropdown, mdbDropdownToggle, mdbDropdownItem, mdbDropdownMenu } from 'mdbvue';
   export default {
@@ -85,6 +100,7 @@
   }
 </script>
 
+<!-- CSS Styling -->
 <style scoped lang="scss">
 #nav-item {
   text-align: right;

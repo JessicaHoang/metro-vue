@@ -1,3 +1,6 @@
+<!--This page is the Station One Info Page. We are redirected to this page
+upon selecting any item on the drop down menu on the home page. In the 
+future I will make more components to add on this page. -->
 <template>
   <div class="StationOneInfo">
     <StationOneBody />

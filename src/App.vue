@@ -1,11 +1,13 @@
+<!--This is the App Component. It is the official main page that displays the Home page.
+The NavBar and FooterSection are both here because no matter what page I am directed to
+it will always display. -->
+
 <template>
   <div id="app">
           <NavBar />
+<!-- The router link is used as the Go back button because we only have two pages so far. -->
     <div id="nav">
       <router-link to="/" id="back-button">Go Back</router-link> 
-      <!-- router links used for testing routing. -->
-      <!-- <router-link to="/about">About</router-link> |
-      <router-link to="/StationOneInfo">StationOneInfo</router-link> -->
     </div>
     <router-view/>
 
@@ -13,7 +15,7 @@
   </div>
 </template>
 
-
+<!-- Script contains the components imported and exported for the App.vue -->
 <script>
 import NavBar from '@/components/NavBar.vue'
 import footerSection from '@/components/footerSection.vue'
@@ -27,6 +29,8 @@ export default {
   }
 }
 </script>
+
+<!-- CSS Styles -->
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 

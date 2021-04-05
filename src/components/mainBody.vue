@@ -1,3 +1,4 @@
+<!-- This component is the body section of the Home component. -->
 <template>
   <main>
     <!-- I added mdbSmooth for smooth scrolling capabilities since the page 
@@ -56,6 +57,8 @@
   </div>
   </main>
 </template>
+
+<!-- Script contains imports and exports -->
   <script>
   import { mdbContainer,  mdbRow, mdbCol, 
     mdbBtn, mdbCard, mdbCardTitle, mdbCardText, 
@@ -88,6 +91,7 @@
       mdbTabContent,
       mdbTabPane,
     },
+    // data for the drop down menus for picking the stations or bus routes
     data(){
       return {
         active: 0, 
@@ -116,6 +120,7 @@
   }
 </script>
 
+<!-- CSS Styling -->
 <style scoped lang="scss">
 #fade {
   max-Width: 700px;

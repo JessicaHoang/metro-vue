@@ -1,3 +1,6 @@
+// This page handles the routing and provides routing-links.
+// It is currently using vue and vue-router to create these routing-links.
+
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
@@ -10,14 +13,6 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
   // routing for the station
   {
     path: '/StationOneInfo',
@@ -26,6 +21,7 @@ const routes = [
   }
 ]
 
+// This is an instance of VueRouter used to make routing links.
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,

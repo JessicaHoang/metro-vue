@@ -1,16 +1,15 @@
+<!-- This component is the Home Page. It is the first page 
+we see when opening up the application. The homepage is where
+we can select our station to redirect to StationOneInfo page.-->
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <mainBody />
   </div>
   
 </template>
 
 <script>
-// @ is an alias to /src
-// components of the home page imported
-
+// imported components
 import mainBody from '@/components/mainBody.vue'
 
 // components of the home page exported
@@ -22,6 +21,7 @@ export default {
 }
 </script>
 
+<!-- CSS Styling -->
 <style scoped lang="scss">
 #header1 {
   text-align: left;
