@@ -2,9 +2,10 @@
   <div id="app">
           <NavBar />
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/StationOneInfo">StationOneInfo</router-link>
+      <router-link to="/" id="back-button">Go Back</router-link> 
+      <!-- router links used for testing routing. -->
+      <!-- <router-link to="/about">About</router-link> |
+      <router-link to="/StationOneInfo">StationOneInfo</router-link> -->
     </div>
     <router-view/>
 
@@ -50,6 +51,11 @@ $image-path: '~@/../mdb/mdbvue/img';
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+  .back-button {
+    display: block;
+    flex: 1;
+    align-items: right;
   }
 }
 </style>

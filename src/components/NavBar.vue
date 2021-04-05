@@ -1,4 +1,3 @@
-script
 <template>
   <mdb-navbar color="indigo" dark>
     <mdb-navbar-brand href="#">

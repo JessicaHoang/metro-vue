@@ -4,7 +4,8 @@
     will have more information in the future. -->
     <!--In this panel, the user is able to look at a dropdown menu to select their station-->
   <div id="panel1">
-  <mdb-container>
+    <h1 id="bodyTitle">Washington Metro Stations</h1>
+  <mdb-container id="panelContainer">
     <mdb-row class="mt-4">
       <mdb-card class="text-center">
         <mdb-card-header>
@@ -33,7 +34,6 @@
                 <option value="2">Station 2</option>
                 <option value="3">Station 3</option>
               </select>
-              <mdb-btn color="primary" v-if="1">Submit</mdb-btn>
             </mdb-tab-pane>
             <mdb-tab-pane class="fade" key="show2" v-if="active==1">
               <mdb-card-title>Select a route <i class="fa fa-bus" aria-hidden="true"></i></mdb-card-title>
@@ -47,7 +47,6 @@
                 <option value="2">Bus Route 2</option>
                 <option value="3">Bus Route 3</option>
               </select>
-              <mdb-btn color="primary">Submit</mdb-btn>
             </mdb-tab-pane>
           </mdb-tab-content>
         </mdb-card-body>
@@ -120,5 +119,11 @@
 <style scoped lang="scss">
 #fade {
   max-Width: 700px;
-}
+};
+#panelContainer {
+  padding-bottom: 80px;
+};
+#bodyTitle {
+  font-weight: 500;
+};
 </style>
