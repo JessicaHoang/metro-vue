@@ -1,6 +1,6 @@
 # metro-vue
 
-##Prerequisites
+## Prerequisites
 1. install either node or yarn: https://nodejs.org/en/download/ , https://classic.yarnpkg.com/en/
 2. install Vue: https://cli.vuejs.org/
 3. (not sure) add md vue: https://mdbootstrap.com/docs/vue/getting-started/quick-start/
