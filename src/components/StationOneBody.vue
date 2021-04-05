@@ -51,8 +51,10 @@ It has the information about the lines, amenities at the station, and available 
     </mdb-tbl>
   </div>
     </div>
+    <!-- This is a Google Maps API that allows the user to dynamically add marks
+    on the map. Currently, it is not able to load, so I have yet to fix this issue. -->
     <div id="Google-maps">
-        <h2>GOOGLE MAPS</h2>
+        <h2>MAP</h2>
         <mdb-google-map
             name="reg"
             class="col-md-12"
@@ -61,13 +63,16 @@ It has the information about the lines, amenities at the station, and available 
             :zoom="14">
         </mdb-google-map>
     </div>
-
+    <!-- Listing of amenities available at the station are listed along with
+    icons from fontawesome-->
     <h2>AMENITIES</h2>
     <ul id="lists">
         <li>Stores <i class="fas fa-store-alt"></i></li>
         <li>Dining <i class="fas fa-utensils"></i></li>
         <li>Phones <i class="fas fa-phone"></i></li>
     </ul>
+    <!-- List of information regarding parking. The ul tag contains
+    an id, "lists" that makes each list item bulleted. -->
     <h2>PARKING</h2>
     <ul id="lists">
         <li> 396 spaces / 16 handicapped spaces</li>
@@ -80,7 +85,8 @@ It has the information about the lines, amenities at the station, and available 
     
   </template>
     
-
+<!-- This script tag contains all bootstrap related imports 
+and exports-->
 <script>
   import { mdbTbl, mdbTblHead, mdbTblBody, mdbSmooth, mdbGoogleMap } from 'mdbvue';
   export default {
@@ -106,6 +112,7 @@ It has the information about the lines, amenities at the station, and available 
   }
 </script>
 
+<!-- CSS styling -->
 <style scoped lang="scss">
 .StationOne {
     text-align: left;
