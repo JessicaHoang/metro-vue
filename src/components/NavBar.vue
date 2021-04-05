@@ -56,15 +56,22 @@ script
             <mdb-dropdown-item>Buy Now</mdb-dropdown-item>
           </mdb-dropdown-menu>
         </mdb-dropdown>
+        <mdb-form-inline class="ml-auto">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+            <mdb-btn size="sm" type="submit" class="mr-auto" outline="white">Search</mdb-btn>
+            </mdb-form-inline>
       </mdb-navbar-nav>
     </mdb-navbar-toggler>
   </mdb-navbar>
 </template>
 
 <script>
-  import { mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbDropdown, mdbDropdownToggle, mdbDropdownItem, mdbDropdownMenu } from 'mdbvue';
+  import { mdbFormInline, mdbInput, mdbBtn,mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbDropdown, mdbDropdownToggle, mdbDropdownItem, mdbDropdownMenu } from 'mdbvue';
   export default {
     components: {
+      mdbFormInline,
+      mdbInput,
+      mdbBtn,
       mdbNavbar,
       mdbNavbarBrand,
       mdbNavbarToggler,
@@ -82,5 +89,11 @@ script
 <style scoped lang="scss">
 #nav-item {
   text-align: right;
+}
+#ml-auto {
+  display: inline-block;
+  position: relative;
+  right: 0px;
+  margin-left:auto;
 }
 </style>

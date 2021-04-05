@@ -1,13 +1,31 @@
 <template>
   <div id="app">
+          <NavBar />
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/StationOneInfo">StationOneInfo</router-link>
     </div>
     <router-view/>
+
+      <footerSection />
   </div>
 </template>
 
+
+<script>
+import NavBar from '@/components/NavBar.vue'
+import footerSection from '@/components/footerSection.vue'
+
+// components of the home page exported
+export default {
+  name: 'App',
+  components: {
+    NavBar,
+    footerSection
+  }
+}
+</script>
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 

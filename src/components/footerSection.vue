@@ -33,7 +33,7 @@
         <hr class="w-100 clearfix d-md-none" />
         <mdb-col md="4" lg="3" xl="3" class="mx-auto mt-3">
           <h6 class="text-uppercase mb-4 font-weight-bold">Washington Metro Information</h6>
-          <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          <p><i class="fas fa-home mr-3"></i> Washington, D.C 20001, US</p>
           <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
           <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
           <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
