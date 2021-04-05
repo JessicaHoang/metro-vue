@@ -1,10 +1,10 @@
 <template>
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-    <!-- header component -->
-    <header1 />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <footer />
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+    <NavBar />
+    <mainBody />
+    <footerSection />
     
   </div>
   
@@ -14,16 +14,18 @@
 // @ is an alias to /src
 // components of the home page imported
 import HelloWorld from '@/components/HelloWorld.vue'
-import header1 from '@/components/header1'
-import footer from '@/components/footer'
+import NavBar from '@/components/NavBar.vue'
+import footerSection from '@/components/footerSection.vue'
+import mainBody from '@/components/mainBody.vue'
 
 // components of the home page exported
 export default {
   name: 'Home',
   components: {
     HelloWorld,
-    header1,
-    footer
+    NavBar,
+    mainBody,
+    footerSection
   }
 }
 </script>

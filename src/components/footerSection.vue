@@ -1,34 +1,38 @@
+// This beautifull designed footer was from https://mdbootstrap.com/docs/vue/navigation/footer/
 
-script
 <template>
   <!-- Footer -->
   <mdb-footer color="stylish-color-dark" class="font-small pt-4 mt-4">
     <mdb-container class="text-center text-md-left">
       <mdb-row class="text-center text-md-left mt-3 pb-3">
         <mdb-col md="3" lg="3" xl="3" class="mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
-          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit.</p>
+          <h6 class="text-uppercase mb-4 font-weight-bold">Washington Metro Vue</h6>
+          <p>Washington Metro Vue was developed to provide the arrival times for each station and line to make planning for using the Metros in Washington quick and easy.</p>
         </mdb-col>
         <hr class="w-100 clearfix d-md-none" />
         <mdb-col md="2" lg="2" xl="2" class="mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-          <p><a href="#!">MDBootstrap</a></p>
-          <p><a href="#!">MDWordPress</a></p>
-          <p><a href="#!">BrandFlow</a></p>
-          <p><a href="#!">Bootstrap Angular</a></p>
+          <h6 class="text-uppercase mb-4 font-weight-bold">Transit Information</h6>
+          <p><a href="#!">Bus Maps </a></p>
+          <p><a href="#!">Bus Schedules</a></p>
+          <p><a href="#!">Rail Maps</a></p>
+          <p><a href="#!">Rail Stations</a></p>
+          <p><a href="#!">Elevators & Escalators</a></p>
+          <p><a href="#!">Fairs & Transfers</a></p>
+          <p><a href="#!">Biking</a></p>
+          <p><a href="#!">Parking</a></p>
+          <p><a href="#!">Accessibility</a></p>
         </mdb-col>
         <hr class="w-100 clearfix d-md-none" />
         <mdb-col md="3" lg="2" xl="2" class="mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-          <p><a href="#!">Your Account</a></p>
-          <p><a href="#!">Become an Affiliate</a></p>
-          <p><a href="#!">Shipping Rates</a></p>
-          <p><a href="#!">Help</a></p>
+          <h6 class="text-uppercase mb-4 font-weight-bold">Report Issues</h6>
+          <p><a href="#!">Contact Us</a></p>
+          <p><a href="#!">Transit Police</a></p>
+          <p><a href="#!">Customer Comment Form</a></p>
+          <p><a href="#!">Lost & Found</a></p>
         </mdb-col>
         <hr class="w-100 clearfix d-md-none" />
         <mdb-col md="4" lg="3" xl="3" class="mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <h6 class="text-uppercase mb-4 font-weight-bold">Washington Metro Information</h6>
           <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
           <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
           <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
@@ -60,7 +64,7 @@ script
 <script>
   import { mdbFooter, mdbContainer, mdbRow, mdbCol } from 'mdbvue';
   export default {
-    name: 'FooterPage',
+    name: 'footerSection',
     components: {
       mdbFooter,
       mdbContainer,
